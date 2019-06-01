@@ -45,7 +45,7 @@ var Table = function () {
 
             var container = ['<div class="Table">', '<div class="T-title"style="overflow: auto;">', '<div>' + title + '</div>', '</div>', '<div class="T-content">', '<label for="T-sort">', '\u6BCF\u9875\u663E\u793A\u6761\u6570\uFF1A<select name="" id="T-pageNum">'].concat(_toConsumableArray([5, 10, 15].map(function (c) {
                 return '<option value="' + c + '">' + c + '</option>';
-            })), ['</select>', '\u6392\u5E8F\uFF1A<select name="" id="T-sort">'], _toConsumableArray(columns.map(function (c) {
+            })), _toConsumableArray(columns.map(function (c) {
                 return '<option value="' + c.data + '">' + c.title + '</option>';
             })), ['</select><input type="text" name="T-search" placeholder="\u641C\u7D22"></label>', '<table border="0" cellspacing="0" cellpadding="0">'], _container, ['</table>', '<div id="T-page"></div>', '</div>', '</div>']).join('');
 
